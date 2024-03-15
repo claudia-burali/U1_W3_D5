@@ -367,14 +367,15 @@ console.log(isTodayMyBirthday())
 */
 
 const deleteProp = function (obj,str) {
-  return obj.filter()}
+  delete obj.str; return obj}
+console.log(deleteProp({ name: "Claudia", surname: "Burali", age: 25 },"surname"))
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
 const newstMovie = (array) => {
-  let result = { Year: 1920 }
+  let result = { Year: 1950 }
   array.forEach((movie) => {
     let currentYear = parseInt(movie.Year)
     if (currentYear > result.Year) {
@@ -568,6 +569,23 @@ addTest()
   *****
 
 */
+
+const tree = function(t) { 
+  for(i=1; i<=t; i++)
+  {   for(j=i; j<t; j++)
+      {
+          document.write(" ");
+      }
+      for(j=1; j<=(2*i-1); j++)
+      {
+          document.write("*");
+      }
+
+      document.write("<br>");
+
+      }
+}
+tree() 
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
