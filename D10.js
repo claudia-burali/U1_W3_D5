@@ -248,20 +248,6 @@ console.log(deleteOne("epicode", true))
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
-/*const str = "ho 7 panini!"
-const arrayOfChars = str.split("")
-
-const prova = function () {
-  for (let i=0; i<arrayOfChars.length; i++) {
-    arrayOfChars[i]= Number(arrayOfChars[i])
-   }
-  for (let i=0; i<arrayOfChars.length; i++) {
-    if (typeof arrayOfChars[i]==="number") {
-    delete arrayOfChars[i]
-  };} return arrayOfChars}
-
-console.log(prova)*/
-
 const onlyLetters = function (str) {
   if (typeof str==="string") { 
     const arrayOfChars = str.split("")
@@ -317,7 +303,8 @@ console.log(whatDayIsIt())
       values: [3, 3, 4]
   }
 */
-/*const result = {}
+
+const result = {}
 const rollTheDices = function (n) { 
   for (let i=0; i<n; i++) {
     const action = dice()
@@ -327,7 +314,7 @@ console.log (action)
   result.sum = dice()*n
   result.values = 
   
-}*/
+}
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
@@ -444,7 +431,7 @@ console.log(searchByTitle("Lord"))
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
-/*const match = []
+const match = []
 const unmatch = []
 const searchResult = {match,unmatch}
 const searchAndDivide = function (str) { movies.filter ((elem) => elem.Title.includes(str))
@@ -526,11 +513,11 @@ addToList("NuovoElemento")
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
-/*const removeFromList = function (elemento) {
+const removeFromList = function (elemento) {
   const ul = document.getElementById("myList")
   while (ul.firstChild) { ul.remove(ul.firstChild)}
 }
-removeFromList()*/
+removeFromList()
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
